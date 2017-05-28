@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <meta name="description" content="Login no sistema">
+    <meta name="author" content="Money Tycoon">
+
+    <link href="css/material-azul-laranja.min.css" rel="stylesheet" />
+    <script src="css/material.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/css.css">
+    <script src="js/scripts.js"></script>
+
+</head>
+<body class="fundo">
+    <form id="form1" runat="server">
+
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                    <span class="mdl-layout-title">Money Tycoon <small>Game </small></span>
+                </div>
+            </header>
+            <div class="mdl-layout__drawer">
+                <a class="mdl-layout-title" href="homealuno.aspx">Home(aluno)</a>
+                <a class="mdl-layout-title" href="homeprof.aspx">Home(professor)</a>
+                <a class="mdl-layout-title" href="homemaster.aspx">Home(responsavel)</a>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="Cadastroalun.aspx">Cadastrar/Consultar Alunos</a>
+                    <a class="mdl-navigation__link" href="Cadastroprof.aspx">Cadastrar/Consultar Professores</a>
+                    <a class="mdl-navigation__link" href="Cadastrosala.aspx">Cadastrar/Consultar Salas</a>
+                    <a class="mdl-navigation__link" href="Cadastromaster.aspx">Cadastrar/Consultar Responsaveis</a>
+                    <a class="mdl-navigation__link" href="Cadastroescola.aspx">Cadastrar/Consultar Escolas</a>
+                    <a class="mdl-navigation__link" href="Cadastroproduto.aspx">Cadastrar/Consultar Produtos</a>
+                    <a class="mdl-navigation__link" href="Cadastrotarefas.aspx">Cadastrar/Consultar Tarefas</a>
+                    <a class="mdl-navigation__link" href="Pagamentocaixa.aspx">Cadastrar/Consultar Pagamentos</a>
+                    <a class="mdl-navigation__link" href="Ranking.aspx">Ranking</a>
+                    <a class="mdl-navigation__link" href="Addcredito.aspx">Adicionar Creditos</a>
+                    <a class="mdl-navigation__link" href="Estorno.aspx">Estorno de credito</a>
+                    <a class="mdl-navigation__link" href="Banco.aspx">Banco</a>
+                    <a class="mdl-navigation__link" href="Estoque.aspx">Ajuste de Estoque</a>
+                    <a class="mdl-navigation__link" href="Permissoes.aspx">Permissoes de usuarios</a>
+                    <hr />
+                    <a class="mdl-navigation__link" href="Perfilaluno.aspx">Meu Perfil(aluno)</a>
+                    <a class="mdl-navigation__link" href="Perfilprof.aspx">Meu Perfil(professor)</a>
+                    <a class="mdl-navigation__link" href="Perfilmaster.aspx">Meu Perfil(responsavel)</a>
+                    <a class="mdl-navigation__link" href="Perfilescola.aspx">Dados da escola</a>
+                    <a class="mdl-navigation__link" href="Documentação.aspx">Documentação</a>
+                    <a class="mdl-navigation__link" href="Feedback.aspx">Feedback</a>
+                    <a class="mdl-navigation__link" href="Login.aspx">Sair</a>
+                </nav>
+            </div>
+        </div>
+
+        <section style="margin-bottom: 60px;">
+
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+        </section>
+
+        <footer class="mdl-mini-footer" style="position: relative; bottom: 0px; width: 100%; padding: 12px 16px; top: auto;">
+            <div class="mdl-mini-footer__left-section">
+                <div class="mdl-logo">Money Tycoon</div>
+                <ul class="mdl-mini-footer__link-list">
+                    <li><a href="Documentação.aspx">Help</a></li>
+                    <li><a href="#">Privacy & Terms</a></li>
+                </ul>
+            </div>
+        </footer>
+
+    </form>
+</body>
+</html>

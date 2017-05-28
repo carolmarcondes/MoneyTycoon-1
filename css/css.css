@@ -1,0 +1,69 @@
+body.fundo {
+    background-image: url('../Imagens/fundo_login.jpg');
+    background-repeat: repeat;
+    min-height: 100%;
+}
+
+.blocolog {
+    display: block;
+    background-color: #FFF;
+    border-radius: 15px;
+    padding: 15px 70px 40px 70px;
+    box-shadow: 5px 5px 5px #888888;
+    min-width: 400px;
+}
+
+.fwhite {
+    display: block;
+    background-color: #FFF;
+    border-radius: 15px;
+    padding: 20px 40px 15px 40px;
+    box-shadow: 5px 5px 5px #888888;
+    min-width: 400px;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.demo-graphs {
+  padding: 16px 32px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+_:-ms-input-placeholder, :root .demo-graphs {
+  min-height: 664px;
+}
+_:-ms-input-placeholder, :root .demo-graph {
+  max-height: 300px;
+}
+/* TODO end */
+.demo-graph:nth-child(1) {
+  color: #00b9d8;
+}
+.demo-graph:nth-child(2) {
+  color: #d9006e;
+}
+
+.demo-card-image > .mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.demo-card-image__filename {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}

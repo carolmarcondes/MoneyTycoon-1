@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ADM_admprof">
+    <Position X="12" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAQAAgADIgMAQCAAEAAAgAAA=</HashCode>
+      <FileName>App_Code\classes\ADM_admprof.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="USR_tipousuario" />
+      <Property Name="ESC_escola" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ALN_aluno">
+    <Position X="2.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EQBQEAAAAAAAAAAAACAAAiCAAACBAEAAAAAAABAgAAA=</HashCode>
+      <FileName>App_Code\classes\ALN_aluno.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="USR_tipousuario" />
+      <Property Name="SAL_sala" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ANO_anoescolar">
+    <Position X="18.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAQBAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>App_Code\classes\ANO_anoescolar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ATV_atividade">
+    <Position X="2.75" Y="24" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAQAAAAAAICAAAEAAIAAAUAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\classes\ATV_atividade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CNT_contrato">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kAAAAAAAACAAAAAAAIAAABAAAABEgIAAAAgAEAEgBAA=</HashCode>
+      <FileName>App_Code\classes\CNT_contrato.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESC_escola">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAgQCCABAAIAAgAAAYAUgAABAEoAACABAAADABAE=</HashCode>
+      <FileName>App_Code\classes\ESC_escola.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EST_estoque">
+    <Position X="18.5" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAABAAAAAAIAEAAAAAAgABIAIAAAAAAAIAAAAA=</HashCode>
+      <FileName>App_Code\classes\EST_estoque.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ESC_escola" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="INV_inventario">
+    <Position X="14" Y="26.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CABAAAAABAAAAAAAABAAACAAAAAIABAAAAAAAAAgAAA=</HashCode>
+      <FileName>App_Code\classes\INV_inventario.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ALN_aluno" />
+      <Property Name="PDT_produto" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="IVD_itemvenda">
+    <Position X="19.25" Y="9.25" Width="1.5" />
+    <AssociationLine Name="PDT_produto" Type="PDT_produto" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="20.75" Y="9.688" />
+        <Point X="21.125" Y="9.688" />
+        <Point X="21.125" Y="7.022" />
+        <Point X="22" Y="7.022" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAGAAAAABAAAAAAAAAAgAAAIAABIAIAAIAAAABAgAAI=</HashCode>
+      <FileName>App_Code\classes\IVD_itemvenda.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="PDT_produto" />
+      <Property Name="MVD_movvenda" />
+      <Property Name="EST_estoque" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LEL_leilao">
+    <Position X="5.5" Y="23.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CABFQAAAAAgAAAACAFCAACAAgAIgABAAAAAQAAQAAAA=</HashCode>
+      <FileName>App_Code\classes\LEL_leilao.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ALN_aluno" />
+      <Property Name="INV_inventario" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LNC_lance">
+    <Position X="16.25" Y="11.5" Width="1.5" />
+    <AssociationLine Name="MBC_movbancaria" Type="MBC_movbancaria" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="16.25" Y="13.431" />
+        <Point X="15.875" Y="13.431" />
+        <Point X="15.875" Y="17.375" />
+        <Point X="15.193" Y="17.375" Type="JumpStart" />
+        <Point X="15.026" Y="17.375" Type="JumpEnd" />
+        <Point X="14.802" Y="17.375" Type="JumpStart" />
+        <Point X="14.635" Y="17.375" Type="JumpEnd" />
+        <Point X="12.865" Y="17.375" Type="JumpStart" />
+        <Point X="12.698" Y="17.375" Type="JumpEnd" />
+        <Point X="10.302" Y="17.375" Type="JumpStart" />
+        <Point X="10.135" Y="17.375" Type="JumpEnd" />
+        <Point X="6.333" Y="17.375" Type="JumpStart" />
+        <Point X="6.167" Y="17.375" Type="JumpEnd" />
+        <Point X="3.583" Y="17.375" Type="JumpStart" />
+        <Point X="3.417" Y="17.375" Type="JumpEnd" />
+        <Point X="1.188" Y="17.375" />
+        <Point X="1.188" Y="17.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>CABAAAEAAAgIABAAAAAAACAAAACAABAAAAEQAAEAIwA=</HashCode>
+      <FileName>App_Code\classes\LNC_lance.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ALN_aluno" />
+      <Property Name="LEL_leilao" />
+      <Property Name="MBC_movbancaria" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MAT_materia">
+    <Position X="18.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAQCQAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>App_Code\classes\MAT_materia.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MBC_movbancaria">
+    <Position X="0.5" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACBEgAAQAAAIABAAAAAkACAoAEIIBBCAEAAAAAABAAY=</HashCode>
+      <FileName>App_Code\classes\MBC_movbancaria.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ALN_aluno" />
+      <Property Name="ATV_atividade" />
+      <Property Name="MVD_movvenda" />
+      <Property Name="ADM_admprof" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MIV_movinventario">
+    <Position X="17" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAABAAAAAIAAAgAAEAAgAAAAERAgI=</HashCode>
+      <FileName>App_Code\classes\MIV_movinventario.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="INV_inventario" />
+      <Property Name="LNC_lance" />
+      <Property Name="MVD_movvenda" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MVD_movvenda">
+    <Position X="10" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAABAAAAAAAAAAAACBAAABIAJAAAAAAAAABAII=</HashCode>
+      <FileName>App_Code\classes\MVD_movvenda.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="PGM_pagamento" />
+      <Property Name="ALN_aluno" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PDT_produto">
+    <Position X="22" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAGAAAAhBAAQEAAAAAAAEAAAAAAIAAEgAAAAAAgAAAA=</HashCode>
+      <FileName>App_Code\classes\PDT_produto.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="SST_subsetor" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PER_permissoesuser">
+    <Position X="10.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAACAAAAAAAAEAAAAAAAAAAABAAA=</HashCode>
+      <FileName>App_Code\classes\PER_permissoesuser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PGM_pagamento">
+    <Position X="7.5" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAACAAAAAAQAAAAAAAQABAAAAAEAAAAAAAIAAAAIA=</HashCode>
+      <FileName>App_Code\classes\PGM_pagamento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PGN_pagamento">
+    <Position X="0.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACQgACAAAAAAAAAEAARAAAQAEAAQAAAgCAAARIA=</HashCode>
+      <FileName>App_Code\classes\PGN_pagamento.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CNT_contrato" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SAL_sala">
+    <Position X="15" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAGAAAAAAAAAAAAgAAAAQAAIAIIBAAAAAAAAAAAAAI=</HashCode>
+      <FileName>App_Code\classes\SAL_sala.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MAT_materia" />
+      <Property Name="ADM_admprof" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SST_subsetor">
+    <Position X="22" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAgAAAAAACAAAAgEAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>App_Code\classes\SST_subsetor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="STR_setor">
+    <Position X="22.25" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAACAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\classes\STR_setor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="USR_tipousuario">
+    <Position X="8.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAIAAAABAAAECAAAAAAACAAEAAAAAAgAQBgAA=</HashCode>
+      <FileName>App_Code\classes\USR_tipousuario.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="PER_permissoesuser" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="RSP_responsavel">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAIAAABAAEAAAEgAAAAEgADAEMAACAAAKAAgACA=</HashCode>
+      <FileName>App_Code\classes\RSP_responsavel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ESC_escola" />
+      <Property Name="USR_tipousuario" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
