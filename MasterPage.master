@@ -25,61 +25,58 @@
 <body class="fundo">
     <form id="form1" runat="server">
 
-        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-            <header class="mdl-layout__header">
-                <div class="mdl-layout__header-row">
-                    <span class="mdl-layout-title">Money Tycoon <small>Game </small></span>
+        
+    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+        <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">Home</span>
+                <div class="mdl-layout-spacer"></div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+                    <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
+                        <i class="material-icons">search</i>
+                    </label>
+                    <div class="mdl-textfield__expandable-holder">
+                        <input class="mdl-textfield__input" type="text" id="search">
+                        <label class="mdl-textfield__label" for="search">Digite aqui...</label>
+                    </div>
                 </div>
-            </header>
-            <div class="mdl-layout__drawer">
-                <a class="mdl-layout-title" href="homealuno.aspx">Home(aluno)</a>
-                <a class="mdl-layout-title" href="homeprof.aspx">Home(professor)</a>
-                <a class="mdl-layout-title" href="homemaster.aspx">Home(responsavel)</a>
-                <nav class="mdl-navigation">
-                    <a class="mdl-navigation__link" href="Cadastroalun.aspx">Cadastrar/Consultar Alunos</a>
-                    <a class="mdl-navigation__link" href="Cadastroprof.aspx">Cadastrar/Consultar Professores</a>
-                    <a class="mdl-navigation__link" href="Cadastrosala.aspx">Cadastrar/Consultar Salas</a>
-                    <a class="mdl-navigation__link" href="Cadastromaster.aspx">Cadastrar/Consultar Responsaveis</a>
-                    <a class="mdl-navigation__link" href="Cadastroescola.aspx">Cadastrar/Consultar Escolas</a>
-                    <a class="mdl-navigation__link" href="Cadastroproduto.aspx">Cadastrar/Consultar Produtos</a>
-                    <a class="mdl-navigation__link" href="Cadastrotarefas.aspx">Cadastrar/Consultar Tarefas</a>
-                    <a class="mdl-navigation__link" href="Pagamentocaixa.aspx">Cadastrar/Consultar Pagamentos</a>
-                    <a class="mdl-navigation__link" href="Ranking.aspx">Ranking</a>
-                    <a class="mdl-navigation__link" href="Addcredito.aspx">Adicionar Creditos</a>
-                    <a class="mdl-navigation__link" href="Estorno.aspx">Estorno de credito</a>
-                    <a class="mdl-navigation__link" href="Banco.aspx">Banco</a>
-                    <a class="mdl-navigation__link" href="Estoque.aspx">Ajuste de Estoque</a>
-                    <a class="mdl-navigation__link" href="Permissoes.aspx">Permissoes de usuarios</a>
-                    <hr />
-                    <a class="mdl-navigation__link" href="Perfilaluno.aspx">Meu Perfil(aluno)</a>
-                    <a class="mdl-navigation__link" href="Perfilprof.aspx">Meu Perfil(professor)</a>
-                    <a class="mdl-navigation__link" href="Perfilmaster.aspx">Meu Perfil(responsavel)</a>
-                    <a class="mdl-navigation__link" href="Perfilescola.aspx">Dados da escola</a>
-                    <a class="mdl-navigation__link" href="Documentação.aspx">Documentação</a>
-                    <a class="mdl-navigation__link" href="Feedback.aspx">Feedback</a>
-                    <a class="mdl-navigation__link" href="Login.aspx">Sair</a>
-                </nav>
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
+                    <i class="material-icons">more_vert</i>
+                </button>
+                <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
+                    <li class="mdl-menu__item">Sobre o Money Tycoon</li>
+                    <li class="mdl-menu__item">Sobre a Quânttico</li>
+                    <li class="mdl-menu__item">Informações legais</li>
+                </ul>
             </div>
+        </header>
+        <div class="demo-drawer mdl-layout__drawer mdl-color--blue-900">
+            <header style="padding-top: 50px; padding-bottom: 10px; padding-left: 5px;">
+                <img src="Imagens/user.jpg" style="width: 40px; height: 40px; border-radius: 20px;">
+                <span style="color: white;">Ola, Diretor</span>
+            </header>
+            <nav class="demo-navigation mdl-navigation mdl-color--blue-800 mdl-color-text--blue-50">
+                <a class="mdl-navigation__link" style="color: #E3F2FD" href=""><i class="material-icons" role="presentation">home</i>  Home</a>
+                <a class="mdl-navigation__link" style="color: #E3F2FD" href="Cadastroprof.aspx"><i class="material-icons" role="presentation">supervisor_account</i>  Professores</a>
+                <a class="mdl-navigation__link" style="color: #E3F2FD" href="Cadastrosala.aspx"><i class="material-icons" role="presentation">group</i>  Salas</a>
+                <a class="mdl-navigation__link" style="color: #E3F2FD" href="#"><i class="material-icons" role="presentation">attach_money</i>  Financeiro</a>
+                <a class="mdl-navigation__link" style="color: #E3F2FD" href="Ranking.aspx"><i class="material-icons" role="presentation">star</i>  Ranking</a>
+                <a class="mdl-navigation__link" style="color: #E3F2FD" href="Perfilmaster.aspx"><i class="material-icons" role="presentation">account_box</i>  Meu perfil</a>
+                <a class="mdl-navigation__link" style="color: #E3F2FD" href="Perfilescola.aspx"><i class="material-icons" role="presentation">location_city</i>  Dados da escola</a>
+                <a class="mdl-navigation__link" style="color: #E3F2FD" href="Feedback.aspx"><i class="material-icons" role="presentation">forum</i>  Contato</a>
+                <div class="mdl-layout-spacer"></div>
+                <a class="mdl-navigation__link" style="color: #E3F2FD" href="Documentação.aspx"><i class="material-icons" role="presentation">help_outline</i>  Ajuda</a>
+                <a class="mdl-navigation__link" style="color: #E3F2FD" href="Login.aspx"><i class="material-icons" role="presentation">exit_to_app</i>  Sair</a>
+            </nav>
         </div>
 
-        <section style="margin-bottom: 60px;">
-
-            <div>
+        <main class="mdl-layout__content mdl-color--grey-100">
+            <div class="mdl-grid demo-content">
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
             </div>
 
-        </section>
-
-        <footer class="mdl-mini-footer" style="position: relative; bottom: 0px; width: 100%; padding: 12px 16px; top: auto;">
-            <div class="mdl-mini-footer__left-section">
-                <div class="mdl-logo">Money Tycoon</div>
-                <ul class="mdl-mini-footer__link-list">
-                    <li><a href="Documentação.aspx">Help</a></li>
-                    <li><a href="#">Privacy & Terms</a></li>
-                </ul>
-            </div>
-        </footer>
+        </main>
 
     </form>
 </body>

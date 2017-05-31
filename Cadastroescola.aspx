@@ -7,12 +7,11 @@
 
 
 
-    <div class="mdl-grid" style="padding-top: 75px;">
-        <div class="mdl-cell mdl-cell--1-col-desktop mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-        <div class="mdl-cell mdl-cell--10-col-desktop mdl-cell--8-col-tablet fwhite">
+    <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-color--white mdl-shadow--2dp demo-charts">
             <h5 style="text-align: center; color: #888;">Cadastro de escola</h5>
             <div class="mdl-grid">
-                <div class="mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet" style="padding: 0px;">
+                <div class="mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet" style="padding-left:20px;">
                     <div class="mdl-grid" style="margin-top: 0px; padding: 0px; margin-left: 0px;">
 
                         <div style="width: 100%;">
@@ -145,7 +144,6 @@
 
         </div>
     </div>
-    <div class="mdl-cell mdl-cell--1-col-desktop mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
     </div>
 
      <!--modal foto-->
