@@ -9,8 +9,8 @@
         <div class="mdl-cell mdl-cell--12-col-desktop mdl-cell--8-col-tablet mdl-color--white mdl-shadow--2dp demo-charts">
             <h5 style="text-align: center; color: #888;">Cadastro de Professor</h5>
             <div class="mdl-grid">
-                <div class="mdl-cell mdl-cell--9-col-desktop mdl-cell--9-col-tablet">
-                    <div class="mdl-grid" style="margin-top: 0px; padding: 0px;">
+                <div class="mdl-cell mdl-cell--9-col-desktop mdl-cell--8-col-tablet">
+                    <div class="mdl-grid" style="margin-top: 0px; padding: 0px; margin-left:10px;">
                         <div style="width: 100%;">
                             <!--nome-->
                             <div class="mdl-textfield mdl-js-textfield" style="width: 100%; margin-right: 10px;">
