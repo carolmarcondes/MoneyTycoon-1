@@ -5,13 +5,12 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
 
-    <div class="mdl-grid" style="padding-top: 75px;">
-        <div class="mdl-cell mdl-cell--1-col-desktop mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-        <div class="mdl-cell mdl-cell--10-col-desktop mdl-cell--8-col-tablet fwhite">
+    <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--12-col-desktop mdl-cell--8-col-tablet mdl-color--white mdl-shadow--2dp demo-charts">
             <h5 style="text-align: center; color: #888;">Cadastro de Professor</h5>
             <div class="mdl-grid">
-                <div class="mdl-cell mdl-cell--8-col-desktop mdl-cell--5-col-tablet" style="padding: 0px;">
-                    <div class="mdl-grid" style="margin-top: 0px; padding: 0px; margin-left: 0px;">
+                <div class="mdl-cell mdl-cell--9-col-desktop mdl-cell--9-col-tablet">
+                    <div class="mdl-grid" style="margin-top: 0px; padding: 0px;">
                         <div style="width: 100%;">
                             <!--nome-->
                             <div class="mdl-textfield mdl-js-textfield" style="width: 100%; margin-right: 10px;">
@@ -35,7 +34,7 @@
 
                         <!--materia - dropdown-->
                         <div class="mdl-textfield mdl-js-textfield" style="width: 79%;">
-                            <asp:CheckBoxList ID="MAT_ID" runat="server" CssClass="mdl-js-ripple-effect" CellPadding="10" CellSpacing="5" RepeatColumns="4">
+                            <asp:CheckBoxList ID="MAT_ID" runat="server" CssClass="mdl-js-ripple-effect" CellPadding="10" CellSpacing="5" RepeatColumns="5">
                                 <asp:ListItem>Artes</asp:ListItem>
                                 <asp:ListItem>Biologia</asp:ListItem>
                                 <asp:ListItem>Ciencias</asp:ListItem>
@@ -75,7 +74,7 @@
                             </div>
 
                             <!--funcao-->
-                            <div class="mdl-textfield mdl-js-textfield" style="width: 25%; margin-right: 10px;">
+                            <div class="mdl-textfield mdl-js-textfield" style="width: 35%; margin-right: 10px;">
                                 <asp:TextBox ID="ADM_funcao" runat="server" CssClass="mdl-textfield__input"></asp:TextBox>
                                 <asp:Label for="ADM_funcao" runat="server" Text="Função" CssClass="mdl-textfield__label"></asp:Label>
                             </div>
@@ -114,8 +113,8 @@
                     </div>
                 </div>
 
-                <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--3-col-tablet" style="text-align: center; margin-right: 0px; padding-right: 0px;">
-                    <img src="Imagens/profile.jpg" class="mdl-shadow--2dp mdl-card" style="width: 300px; height: 300px; display: block; text-align: center; margin: auto;" />
+                <div class="mdl-cell mdl-cell--2-col-desktop mdl-cell--2-col-tablet" style="text-align: center; margin-right: 20px; padding-left: 5px;">
+                    <img src="Imagens/profile.jpg" class="mdl-shadow--2dp mdl-card" style="width: 280px; height: 280px; display: block; text-align: center; margin: auto;" />
                     <br>
                     <br>
                     <button id="btnfoto" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent modal">Foto</button>
@@ -124,7 +123,6 @@
 
         </div>
     </div>
-    <div class="mdl-cell mdl-cell--1-col-desktop mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
     </div>
 
             <!--modal foto-->

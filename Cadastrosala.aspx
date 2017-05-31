@@ -4,9 +4,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
 
-    <div class="mdl-grid" style="padding-top: 75px;">
-        <div class="mdl-cell mdl-cell--1-col-desktop mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-        <div class="mdl-cell mdl-cell--10-col-desktop mdl-cell--8-col-tablet fwhite">
+    <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--12-col-desktop mdl-cell--8-col-tablet mdl-color--white mdl-shadow--2dp demo-charts">
             <h5 style="text-align: center; color: #888;">Cadastro de salas</h5>
             <div class="mdl-grid">
 
@@ -29,7 +28,7 @@
                     </div>
 
                     <!--materia - cheklist-->
-                    <div class="mdl-textfield mdl-js-textfield" style="width: 98%; margin-left: 2%">
+                    <div class="mdl-textfield mdl-js-textfield" style="width: 98%; margin-left: 2%; margin-left: 15%; margin-right:15%">
                         <asp:CheckBoxList ID="MAT_ID" runat="server" CssClass="mdl-js-ripple-effect" CellPadding="-1" CellSpacing="40" Height="100%" RepeatColumns="6">
                             <asp:ListItem>Artes</asp:ListItem>
                             <asp:ListItem>Biologia</asp:ListItem>
@@ -53,23 +52,21 @@
 
                     </div>
 
-                    </div>
+                </div>
 
 
 
 
 
-                    <!--barra de botoes de acao-->
-                    <div style="text-align: center; width: 100%; margin-top: 5%">
-                        <asp:Button ID="btnsalvar" runat="server" Text="Salvar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" />
-                        <asp:Button ID="btnalterar" runat="server" Text="Alterar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
-                        <asp:Button ID="btnexcluir" runat="server" Text="Excluir" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
-                        <asp:Button ID="btncancelar" runat="server" Text="Cancelar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
-                    </div>
-    </div>
-    </div>
-
-        <div class="mdl-cell mdl-cell--1-col-desktop mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+                <!--barra de botoes de acao-->
+                <div style="text-align: center; width: 100%; margin-top: 5%">
+                    <asp:Button ID="btnsalvar" runat="server" Text="Salvar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" />
+                    <asp:Button ID="btnalterar" runat="server" Text="Alterar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
+                    <asp:Button ID="btnexcluir" runat="server" Text="Excluir" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
+                    <asp:Button ID="btncancelar" runat="server" Text="Cancelar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
+                </div>
+            </div>
+        </div>
     </div>
 
 </asp:Content>
