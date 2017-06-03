@@ -28,7 +28,7 @@
                     </div>
 
                     <!--materia - cheklist-->
-                    <div class="mdl-textfield mdl-js-textfield" style="width: 98%; margin-left: 2%; margin-left: 15%; margin-right:15%">
+                    <div class="mdl-textfield mdl-js-textfield" style="width: 98%; margin-left: 2%; margin-left: 15%; margin-right: 15%">
                         <asp:CheckBoxList ID="MAT_ID" runat="server" CssClass="mdl-js-ripple-effect" CellPadding="-1" CellSpacing="40" Height="100%" RepeatColumns="6">
                             <asp:ListItem>Artes</asp:ListItem>
                             <asp:ListItem>Biologia</asp:ListItem>
@@ -64,10 +64,54 @@
                     <asp:Button ID="btnalterar" runat="server" Text="Alterar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
                     <asp:Button ID="btnexcluir" runat="server" Text="Excluir" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
                     <asp:Button ID="btncancelar" runat="server" Text="Cancelar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
+                    <asp:Button ID="btnconsulta" runat="server" Text="Consulta" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        var carregar = true;
+        window.onload= function () {
+            //if (!carregar) {
+                document.querySelector('.pesquisa').showModal();
+            //}
+        };
+
+
+        var modalButton = document.querySelector('#btnconsulta').addEventListener('click', function () {
+            document.querySelector('.pesquisa').showModal();
+        });
+
+        var closeButton = document.querySelector('#btnmodal1').addEventListener('click', function () {
+            carregar = false;
+        });
+
+    </script>
+
+    <!--modal consulta-->
+    <dialog class="mdl-dialog pesquisa" style="width: 60%;" id="lecartao">
+        <div class="mdl-dialog__content">
+            <h6 style="color: #0D47A1; text-align: center;">Salas cadastradas</h6>
+            <br />
+            <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--6-col">
+                    <br />
+                    <asp:Label ID="desordenado" runat="server" Text="lista desordenada"></asp:Label>
+                    <br />
+                </div>
+                <div class="mdl-cell mdl-cell--6-col">
+                    <br />
+                    <asp:Label ID="ordenado" runat="server" Text="lista ordenada"></asp:Label>
+                    <br />
+                </div>
+            </div>
+            <asp:Button ID="btnordenar" runat="server" Text="Ordenar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary"/>
+        </div>
+        <div class="mdl-dialog__actions mdl-dialog__actions--full-width">
+            <asp:Button ID="btnmodal1" runat="server" Text="Cadastrar novo" CssClass="mdl-button close"  />
+        </div>
+    </dialog>
 
 </asp:Content>
 
