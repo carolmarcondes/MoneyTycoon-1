@@ -117,82 +117,76 @@
         <div class="mdl-cell mdl-cell--1-col-desktop mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
     </div>
 
-    <div>
-        <!--modal arduino-->
-        <dialog class="mdl-dialog arduino" style="width: 60%;" id="lecartao">
-            <div class="mdl-dialog__content">
-                <h6 style="color: #0D47A1; text-align: center;">Leitura do cartão</h6>
-                <p>Passe o cartão na leitora para obter o numero</p>
-                <br />
-                <br />
-                <!--codigo do cartao-->
-                <asp:Label ID="Label1" runat="server" Text="Codigo cartão" Width="40%" Style="margin-right: 10px; color: #888; font-weight: bold; text-align: center;"></asp:Label>
-                <br />
-                <br />
-            </div>
-            <div class="mdl-dialog__actions mdl-dialog__actions--full-width">
-                <asp:Button ID="btnmodal1" runat="server" Text="Pronto!" CssClass="mdl-button close" />
-            </div>
-        </dialog>
+    <!--modal arduino-->
+    <dialog class="mdl-dialog arduino" style="width: 60%;" id="lecartao">
+        <div class="mdl-dialog__content">
+            <h6 style="color: #0D47A1; text-align: center;">Leitura do cartão</h6>
+            <p>Passe o cartão na leitora para obter o numero</p>
+            <br />
+            <br />
+            <!--codigo do cartao-->
+            <asp:Label ID="Label1" runat="server" Text="Codigo cartão" Width="40%" Style="margin-right: 10px; color: #888; font-weight: bold; text-align: center;"></asp:Label>
+            <br />
+            <br />
+        </div>
+        <div class="mdl-dialog__actions mdl-dialog__actions--full-width">
+            <asp:Button ID="btnmodal1" runat="server" Text="Pronto!" CssClass="mdl-button close" />
+        </div>
+    </dialog>
 
-        <!--modal foto-->
-        <dialog class="mdl-dialog foto" id="modalfoto" style="width: 30%;">
-            <div class="mdl-dialog__content">
-                <p>
-                    Escolha a foto de perfil
-                </p>
-                <asp:FileUpload ID="FileUpload1" runat="server" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" />
-            </div>
-            <div class="mdl-dialog__actions mdl-dialog__actions--full-width">
-                <asp:Button ID="Button1" runat="server" Text="Pronto!" CssClass="mdl-button close" />
-            </div>
-        </dialog>
+    <!--modal foto-->
+    <dialog class="mdl-dialog foto" id="modalfoto" style="width: 30%;">
+        <div class="mdl-dialog__content">
+            <p>
+                Escolha a foto de perfil
+            </p>
+            <asp:FileUpload ID="FileUpload1" runat="server" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" />
+        </div>
+        <div class="mdl-dialog__actions mdl-dialog__actions--full-width">
+            <asp:Button ID="Button1" runat="server" Text="Pronto!" CssClass="mdl-button close" />
+        </div>
+    </dialog>
 
-        <!--modal consulta-->
-        <dialog class="mdl-dialog pesquisa" style="width: 60%;" id="pesquisa">
-            <div class="mdl-dialog__content">
-                <h6 style="color: #0D47A1; text-align: center;">Salas cadastradas</h6>
-                <br />
-                <div class="mdl-grid">
-                    <div class="mdl-cell mdl-cell--6-col">
-                        <br />
-                        <asp:Label ID="desordenado" runat="server" Text="lista desordenada"></asp:Label>
-                        <br />
-                    </div>
-                    <div class="mdl-cell mdl-cell--6-col">
-                        <br />
-                        <asp:Label ID="ordenado" runat="server" Text="lista ordenada"></asp:Label>
-                        <br />
-                    </div>
+    <!--modal consulta-->
+    <dialog class="mdl-dialog pesquisa" style="width: 60%;" id="pesquisa">
+        <div class="mdl-dialog__content">
+            <h6 style="color: #0D47A1; text-align: center;">Alunos cadastradas</h6>
+            <br />
+            <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--6-col">
+                    <br />
+                    <asp:Label ID="desordenado" runat="server" Text="lista desordenada"></asp:Label>
+                    <br />
                 </div>
-                <asp:Button ID="btnordenar" runat="server" Text="Ordenar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
+                <div class="mdl-cell mdl-cell--6-col">
+                    <br />
+                    <asp:Label ID="ordenado" runat="server" Text="lista ordenada"></asp:Label>
+                    <br />
+                </div>
             </div>
-            <div class="mdl-dialog__actions mdl-dialog__actions--full-width">
-                <asp:Button ID="btnfecha" runat="server" Text="Cadastrar novo" CssClass="mdl-button close" />
-            </div>
-        </dialog>
+            <asp:Button ID="btnordenar" runat="server" Text="Ordenar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
+        </div>
+        <div class="mdl-dialog__actions mdl-dialog__actions--full-width">
+            <asp:Button ID="btnfecha" runat="server" Text="Cadastrar novo" CssClass="mdl-button close" />
+        </div>
+    </dialog>
 
 
-        <script>
+    <script>
 
-            document.querySelector('#btncartao').addEventListener('click', function () {
-                document.querySelector('.arduino').showModal();
-            });
+        document.querySelector('#btncartao').addEventListener('click', function () {
+            document.querySelector('.arduino').showModal();
+        });
 
 
-            document.querySelector('#btnfoto').addEventListener('click', function () {
-                document.querySelector('.foto').showModal();
-            });
+        document.querySelector('#btnfoto').addEventListener('click', function () {
+            document.querySelector('.foto').showModal();
+        });
 
-            dialog.querySelector('.close').addEventListener('click', function () {
-                dialog.close();
-            });
+        dialog.querySelector('.close').addEventListener('click', function () {
+            dialog.close();
+        });
 
-            document.querySelector('#btnconsulta').addEventListener('click', function () {
-                document.querySelector('.pesquisa').showModal();
-            });
-
-        </script>
-    </div>
+    </script>
 
 </asp:Content>

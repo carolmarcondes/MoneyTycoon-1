@@ -90,7 +90,7 @@
                             <asp:Button ID="btnalterar" runat="server" Text="Alterar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
                             <asp:Button ID="btnexcluir" runat="server" Text="Excluir" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
                             <asp:Button ID="btncancelar" runat="server" Text="Cancelar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
-                            <button id="btnconsulta" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent modal">Pesquisar</button>
+                            <button id="btnconsulta" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">Pesquisar</button>
                         </div>
                     </div>
 
@@ -99,24 +99,11 @@
                     <img src="Imagens/profile.jpg" class="mdl-shadow--2dp mdl-card" style="width: 280px; height: 280px; display: block; text-align: center; margin: auto;" />
                     <br>
                     <br>
-                    <button id="btnfoto" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent modal">Foto</button>
+                    <button id="btnfoto" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">Foto</button>
                 </div>
             </div>
         </div>
     </div>
-
-    <!--modal foto-->
-    <dialog class="mdl-dialog foto" id="modalfoto" style="width: 30%;">
-        <div class="mdl-dialog__content">
-            <p>
-                Escolha a foto de perfil
-            </p>
-            <asp:FileUpload ID="FileUpload1" runat="server" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" />
-        </div>
-        <div class="mdl-dialog__actions mdl-dialog__actions--full-width">
-            <asp:Button ID="Button1" runat="server" Text="Pronto!" CssClass="mdl-button close" />
-        </div>
-    </dialog>
 
     <script>
 
@@ -134,10 +121,23 @@
 
     </script>
 
-    <!--modal consulta-->
-    <dialog class="mdl-dialog pesquisa" style="width: 60%;" id="pesquisa">
+    <!--modal foto-->
+    <dialog class="mdl-dialog foto" id="modalfoto" style="width: 30%;">
         <div class="mdl-dialog__content">
-            <h6 style="color: #0D47A1; text-align: center;">Salas cadastradas</h6>
+            <p>
+                Escolha a foto de perfil
+            </p>
+            <asp:FileUpload ID="FileUpload1" runat="server" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" />
+        </div>
+        <div class="mdl-dialog__actions mdl-dialog__actions--full-width">
+            <asp:Button ID="Button1" runat="server" Text="Pronto!" CssClass="mdl-button close" />
+        </div>
+    </dialog>
+
+    <!--modal consulta-->
+    <dialog class="mdl-dialog pesquisa" style="width: 60%;">
+        <div class="mdl-dialog__content">
+            <h6 style="color: #0D47A1; text-align: center;">Responsaveis cadastradas</h6>
             <br />
             <div class="mdl-grid">
                 <div class="mdl-cell mdl-cell--6-col">

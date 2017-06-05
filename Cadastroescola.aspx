@@ -163,7 +163,7 @@
     <!--modal consulta-->
     <dialog class="mdl-dialog pesquisa" style="width: 60%;" id="pesquisa">
         <div class="mdl-dialog__content">
-            <h6 style="color: #0D47A1; text-align: center;">Salas cadastradas</h6>
+            <h6 style="color: #0D47A1; text-align: center;">Escolas cadastradas</h6>
             <br />
             <div class="mdl-grid">
                 <div class="mdl-cell mdl-cell--6-col">

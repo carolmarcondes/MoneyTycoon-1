@@ -62,6 +62,7 @@
                 <a class="mdl-navigation__link" style="color: #E3F2FD" href="Cadastroalun.aspx"><i class="material-icons" role="presentation">face</i>  Alunos</a>
                 <a class="mdl-navigation__link" style="color: #E3F2FD" href="Cadastromaster.aspx"><i class="material-icons" role="presentation">account_box</i>  Responsavel</a>
                 <a class="mdl-navigation__link" style="color: #E3F2FD" href="Cadastroescola.aspx"><i class="material-icons" role="presentation">location_city</i>  Escola</a>
+                <a class="mdl-navigation__link" style="color: #E3F2FD" href="Cadastroescola.aspx"><i class="material-icons" role="presentation">search</i>  Resultados</a>
 
                 <!--<a class="mdl-navigation__link" style="color: #E3F2FD" href="#"><i class="material-icons" role="presentation">attach_money</i>  Financeiro</a>
                 <a class="mdl-navigation__link" style="color: #E3F2FD" href="Ranking.aspx"><i class="material-icons" role="presentation">star</i>  Ranking</a>
