@@ -99,7 +99,7 @@
                             <asp:Button ID="btnalterar" runat="server" Text="Alterar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
                             <asp:Button ID="btnexcluir" runat="server" Text="Excluir" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
                             <asp:Button ID="btncancelar" runat="server" Text="Cancelar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
-                            <button id="btnconsulta" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent modal">Pesquisar</button>
+                            <button id="btnconsulta" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent modal" value="2">Pesquisar</button>
                         </div>
                     </div>
                 </div>
@@ -148,7 +148,7 @@
     </dialog>
 
     <!--modal consulta-->
-    <dialog class="mdl-dialog pesquisa" style="width: 60%;" id="pesquisa">
+    <dialog class="mdl-dialog pesquisa" style="width: 60%;" id="modalpesquisa">
         <div class="mdl-dialog__content">
             <h6 style="color: #0D47A1; text-align: center;">Alunos cadastradas</h6>
             <br />
@@ -167,7 +167,7 @@
             <asp:Button ID="btnordenar" runat="server" Text="Ordenar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
         </div>
         <div class="mdl-dialog__actions mdl-dialog__actions--full-width">
-            <asp:Button ID="btnfecha" runat="server" Text="Cadastrar novo" CssClass="mdl-button close" />
+            <asp:Button ID="btnfecha" runat="server" Text="Voltar" CssClass="mdl-button close" />
         </div>
     </dialog>
 
@@ -178,9 +178,12 @@
             document.querySelector('.arduino').showModal();
         });
 
-
         document.querySelector('#btnfoto').addEventListener('click', function () {
             document.querySelector('.foto').showModal();
+        });
+
+        document.querySelector('#btnconsulta').addEventListener('click', function () {
+            document.querySelector('.pesquisa').showModal();
         });
 
         dialog.querySelector('.close').addEventListener('click', function () {

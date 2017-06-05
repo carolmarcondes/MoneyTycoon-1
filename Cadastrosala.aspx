@@ -103,7 +103,7 @@
             <asp:Button ID="btnordenar" runat="server" Text="Ordenar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
         </div>
         <div class="mdl-dialog__actions mdl-dialog__actions--full-width">
-            <asp:Button ID="btnfecha" runat="server" Text="Cadastrar novo" CssClass="mdl-button close" />
+            <asp:Button ID="btnfecha" runat="server" Text="Voltar" CssClass="mdl-button close" />
         </div>
     </dialog>
 
