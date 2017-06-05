@@ -90,6 +90,7 @@
                             <asp:Button ID="btnalterar" runat="server" Text="Alterar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
                             <asp:Button ID="btnexcluir" runat="server" Text="Excluir" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
                             <asp:Button ID="btncancelar" runat="server" Text="Cancelar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
+                            <button id="btnconsulta" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent modal">Pesquisar</button>
                         </div>
                     </div>
 
@@ -119,7 +120,7 @@
 
     <script>
 
-        var modalButton1 = document.querySelector('#btnfoto').addEventListener('click', function () {
+        document.querySelector('#btnfoto').addEventListener('click', function () {
             document.querySelector('.foto').showModal();
         });
 
@@ -127,7 +128,35 @@
             dialog.close();
         });
 
+        document.querySelector('#btnconsulta').addEventListener('click', function () {
+            document.querySelector('.pesquisa').showModal();
+        });
+
     </script>
+
+    <!--modal consulta-->
+    <dialog class="mdl-dialog pesquisa" style="width: 60%;" id="pesquisa">
+        <div class="mdl-dialog__content">
+            <h6 style="color: #0D47A1; text-align: center;">Salas cadastradas</h6>
+            <br />
+            <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--6-col">
+                    <br />
+                    <asp:Label ID="desordenado" runat="server" Text="lista desordenada"></asp:Label>
+                    <br />
+                </div>
+                <div class="mdl-cell mdl-cell--6-col">
+                    <br />
+                    <asp:Label ID="ordenado" runat="server" Text="lista ordenada"></asp:Label>
+                    <br />
+                </div>
+            </div>
+            <asp:Button ID="btnordenar" runat="server" Text="Ordenar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
+        </div>
+        <div class="mdl-dialog__actions mdl-dialog__actions--full-width">
+            <asp:Button ID="btnfecha" runat="server" Text="Cadastrar novo" CssClass="mdl-button close" />
+        </div>
+    </dialog>
 
 </asp:Content>
 

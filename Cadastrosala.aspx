@@ -64,33 +64,27 @@
                     <asp:Button ID="btnalterar" runat="server" Text="Alterar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
                     <asp:Button ID="btnexcluir" runat="server" Text="Excluir" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
                     <asp:Button ID="btncancelar" runat="server" Text="Cancelar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
-                    <asp:Button ID="btnconsulta" runat="server" Text="Consulta" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
+                    <button id="btnconsulta" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent modal">Pesquisar</button>
                 </div>
             </div>
         </div>
     </div>
 
     <script>
-        var carregar = true;
-        window.onload= function () {
-            //if (!carregar) {
-                document.querySelector('.pesquisa').showModal();
-            //}
-        };
+        //document.onload = function () { document.querySelector('.pesquisa').showModal() };
 
-
-        var modalButton = document.querySelector('#btnconsulta').addEventListener('click', function () {
+        document.querySelector('#btnconsulta').addEventListener('click', function () {
             document.querySelector('.pesquisa').showModal();
         });
 
-        var closeButton = document.querySelector('#btnmodal1').addEventListener('click', function () {
-            carregar = false;
+        dialog.querySelector('.close').addEventListener('click', function () {
+            document.querySelector('.pesquisa').close();
         });
 
     </script>
 
     <!--modal consulta-->
-    <dialog class="mdl-dialog pesquisa" style="width: 60%;" id="lecartao">
+    <dialog class="mdl-dialog pesquisa" style="width: 60%;" id="pesquisa">
         <div class="mdl-dialog__content">
             <h6 style="color: #0D47A1; text-align: center;">Salas cadastradas</h6>
             <br />
@@ -106,10 +100,10 @@
                     <br />
                 </div>
             </div>
-            <asp:Button ID="btnordenar" runat="server" Text="Ordenar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary"/>
+            <asp:Button ID="btnordenar" runat="server" Text="Ordenar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
         </div>
         <div class="mdl-dialog__actions mdl-dialog__actions--full-width">
-            <asp:Button ID="btnmodal1" runat="server" Text="Cadastrar novo" CssClass="mdl-button close"  />
+            <asp:Button ID="btnfecha" runat="server" Text="Cadastrar novo" CssClass="mdl-button close" />
         </div>
     </dialog>
 

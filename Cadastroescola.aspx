@@ -11,7 +11,7 @@
         <div class="mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-color--white mdl-shadow--2dp demo-charts">
             <h5 style="text-align: center; color: #888;">Cadastro de escola</h5>
             <div class="mdl-grid">
-                <div class="mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet" style="padding-left:20px;">
+                <div class="mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet" style="padding-left: 20px;">
                     <div class="mdl-grid" style="margin-top: 0px; padding: 0px; margin-left: 0px;">
 
                         <div style="width: 100%;">
@@ -125,6 +125,7 @@
                             <asp:Button ID="btnalterar" runat="server" Text="Alterar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
                             <asp:Button ID="btnexcluir" runat="server" Text="Excluir" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
                             <asp:Button ID="btncancelar" runat="server" Text="Cancelar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
+                            <button id="btnconsulta" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent modal">Pesquisar</button>
                         </div>
 
                         <!--label confirmação-->
@@ -159,9 +160,33 @@
         </div>
     </dialog>
 
+    <!--modal consulta-->
+    <dialog class="mdl-dialog pesquisa" style="width: 60%;" id="pesquisa">
+        <div class="mdl-dialog__content">
+            <h6 style="color: #0D47A1; text-align: center;">Salas cadastradas</h6>
+            <br />
+            <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--6-col">
+                    <br />
+                    <asp:Label ID="desordenado" runat="server" Text="lista desordenada"></asp:Label>
+                    <br />
+                </div>
+                <div class="mdl-cell mdl-cell--6-col">
+                    <br />
+                    <asp:Label ID="ordenado" runat="server" Text="lista ordenada"></asp:Label>
+                    <br />
+                </div>
+            </div>
+            <asp:Button ID="btnordenar" runat="server" Text="Ordenar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
+        </div>
+        <div class="mdl-dialog__actions mdl-dialog__actions--full-width">
+            <asp:Button ID="btnfecha" runat="server" Text="Cadastrar novo" CssClass="mdl-button close" />
+        </div>
+    </dialog>
+
     <script>
 
-        var modalButton1 = document.querySelector('#btnfoto').addEventListener('click', function () {
+        document.querySelector('#btnfoto').addEventListener('click', function () {
             document.querySelector('.foto').showModal();
         });
 
@@ -169,12 +194,16 @@
             dialog.close();
         });
 
-                function snackbarconfirm() {
-                    document.querySelector('#demo-show-toast').MaterialSnackbar.showSnackbar({ message: 'Cadastro feito com sucesso!' });
-                }
-                function snackbarerror() {
-                    document.querySelector('#demo-show-toast').MaterialSnackbar.showSnackbar({ message: 'Deu algum probleminha, tente de novo!' });
-                }
+        document.querySelector('#btnconsulta').addEventListener('click', function () {
+            document.querySelector('.pesquisa').showModal();
+        });
+
+        function snackbarconfirm() {
+            document.querySelector('#demo-show-toast').MaterialSnackbar.showSnackbar({ message: 'Cadastro feito com sucesso!' });
+        }
+        function snackbarerror() {
+            document.querySelector('#demo-show-toast').MaterialSnackbar.showSnackbar({ message: 'Deu algum probleminha, tente de novo!' });
+        }
 
     </script>
 

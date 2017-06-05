@@ -10,7 +10,7 @@
             <h5 style="text-align: center; color: #888;">Cadastro de Professor</h5>
             <div class="mdl-grid">
                 <div class="mdl-cell mdl-cell--9-col-desktop mdl-cell--8-col-tablet">
-                    <div class="mdl-grid" style="margin-top: 0px; padding: 0px; margin-left:10px;">
+                    <div class="mdl-grid" style="margin-top: 0px; padding: 0px; margin-left: 10px;">
                         <div style="width: 100%;">
                             <!--nome-->
                             <div class="mdl-textfield mdl-js-textfield" style="width: 100%; margin-right: 10px;">
@@ -108,6 +108,7 @@
                                 <asp:Button ID="btnalterar" runat="server" Text="Alterar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
                                 <asp:Button ID="btnexcluir" runat="server" Text="Excluir" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
                                 <asp:Button ID="btncancelar" runat="server" Text="Cancelar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
+                                <button id="btnconsulta" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent modal">Pesquisar</button>
                             </div>
                         </div>
                     </div>
@@ -126,29 +127,57 @@
     </div>
 
             <!--modal foto-->
-        <dialog class="mdl-dialog foto" id="modalfoto" style="width: 30%;">
-            <div class="mdl-dialog__content">
-                <p>
-                    Escolha a foto de perfil
-                </p>
-                <asp:FileUpload ID="FileUpload1" runat="server" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" />
-            </div>
-            <div class="mdl-dialog__actions mdl-dialog__actions--full-width">
-                <asp:Button ID="Button1" runat="server" Text="Pronto!" CssClass="mdl-button close" />
-            </div>
-        </dialog>
+    <dialog class="mdl-dialog foto" id="modalfoto" style="width: 30%;">
+        <div class="mdl-dialog__content">
+            <p>
+                Escolha a foto de perfil
+            </p>
+            <asp:FileUpload ID="FileUpload1" runat="server" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" />
+        </div>
+        <div class="mdl-dialog__actions mdl-dialog__actions--full-width">
+            <asp:Button ID="Button1" runat="server" Text="Pronto!" CssClass="mdl-button close" />
+        </div>
+    </dialog>
 
-        <script>
-            
-            var modalButton1 = document.querySelector('#btnfoto').addEventListener('click', function () {
-                document.querySelector('.foto').showModal();
-            });
-            
-            dialog.querySelector('.close').addEventListener('click', function () {
-                dialog.close();
-            });
+    <!--modal consulta-->
+    <dialog class="mdl-dialog pesquisa" style="width: 60%;" id="pesquisa">
+        <div class="mdl-dialog__content">
+            <h6 style="color: #0D47A1; text-align: center;">Salas cadastradas</h6>
+            <br />
+            <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--6-col">
+                    <br />
+                    <asp:Label ID="desordenado" runat="server" Text="lista desordenada"></asp:Label>
+                    <br />
+                </div>
+                <div class="mdl-cell mdl-cell--6-col">
+                    <br />
+                    <asp:Label ID="ordenado" runat="server" Text="lista ordenada"></asp:Label>
+                    <br />
+                </div>
+            </div>
+            <asp:Button ID="btnordenar" runat="server" Text="Ordenar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
+        </div>
+        <div class="mdl-dialog__actions mdl-dialog__actions--full-width">
+            <asp:Button ID="btnfecha" runat="server" Text="Cadastrar novo" CssClass="mdl-button close" />
+        </div>
+    </dialog>
 
-        </script>
+    <script>
+
+        document.querySelector('#btnfoto').addEventListener('click', function () {
+            document.querySelector('.foto').showModal();
+        });
+
+        dialog.querySelector('.close').addEventListener('click', function () {
+            dialog.close();
+        });
+
+        document.querySelector('#btnconsulta').addEventListener('click', function () {
+            document.querySelector('.pesquisa').showModal();
+        });
+
+    </script>
 
 </asp:Content>
 
