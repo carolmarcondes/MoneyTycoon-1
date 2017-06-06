@@ -22,7 +22,7 @@
                     </div>-->
 
                     <!--sala-->
-                    <div class="mdl-textfield mdl-js-textfield" style="width: 80%; margin-left: 10px;">
+                    <div class="mdl-textfield mdl-js-textfield" style="width: 90%; margin-left: 10px;">
                         <asp:TextBox ID="SAL_nome" runat="server" CssClass="mdl-textfield__input" ToolTip="Cadastro das tarefas"></asp:TextBox>
                         <asp:Label for="SAL_nome" runat="server" Text="Nome da sala" CssClass="mdl-textfield__label"></asp:Label>
                     </div>
