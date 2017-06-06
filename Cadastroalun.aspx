@@ -14,22 +14,22 @@
                         <div style="width: 100%;">
                             <!--nome-->
                             <div class="mdl-textfield mdl-js-textfield" style="width: 70%; margin-right: 10px;">
-                                <asp:TextBox ID="ALN_nome" runat="server" CssClass="mdl-textfield__input" ToolTip="Nome completo do aluno"></asp:TextBox>
+                                <asp:TextBox ID="ALN_nome" runat="server" CssClass="mdl-textfield__input" ToolTip="Nome completo do aluno" MaxLength="45"></asp:TextBox>
                                 <asp:Label for="ALN_nome" runat="server" Text="Nome" CssClass="mdl-textfield__label"></asp:Label>
                                 <span class="mdl-textfield__error">Só letras</span>
                             </div>
 
-                            <!--data nascimento-->
+                            <!--data nascimento--><!--voltar para date para o pi-->
                             <div class="mdl-textfield mdl-js-textfield" style="width: 25%">
-                                <asp:TextBox ID="ALN_nasc" runat="server" CssClass="mdl-textfield__input" ToolTip="Data de nascimento do aluno" TextMode="Date"></asp:TextBox>
-                                <asp:Label for="ALN_nasc" runat="server" Text="Nascimento" CssClass="mdl-textfield__label"></asp:Label>
-                                <span class="mdl-textfield__error">Selecione ou digite a data</span>
+                                <asp:TextBox ID="ALN_nasc" runat="server" CssClass="mdl-textfield__input" ToolTip="Idade do aluno" TextMode="Number" MaxLength="2"></asp:TextBox>
+                                <asp:Label for="ALN_nasc" runat="server" Text="Idade" CssClass="mdl-textfield__label"></asp:Label>
+                                <span class="mdl-textfield__error">Só numero</span>
                             </div>
 
                         </div>
 
                         <div style="width: 100%;">
-                            <!--sexo - radio button-->
+                            <!--sexo - radio button--><!--
                             <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="ALN_sexo" style="margin-right: 40px;">
                                 <input type="radio" id="ALN_sexo" class="mdl-radio__button" name="options" value="M">
                                 <span class="mdl-radio__label" style="color: #888;">Masculino</span>
@@ -37,15 +37,23 @@
                             <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="ALN_sexoF">
                                 <input type="radio" id="ALN_sexoF" class="mdl-radio__button" name="options" value="F">
                                 <span class="mdl-radio__label" style="color: #888;">Feminino</span>
-                            </label>
+                            </label>-->
 
-                        </div>
+                                <!--sexo em dropdown-->
+                                <div class="mdl-textfield mdl-js-textfield" style="width: 30%;">
+                                    <asp:DropDownList ID="ALN_sexo" runat="server" CssClass="mdl-textfield__input mdl-js-ripple-effect">
+                                        <asp:ListItem>Masculino</asp:ListItem>
+                                        <asp:ListItem>Feminino</asp:ListItem>
+                                    </asp:DropDownList>
+                                </div>
 
-                        <div style="width: 100%;">
+                        <!--</div>
+
+                        <div style="width: 100%;">-->
 
                             <!--matricula-->
-                            <div class="mdl-textfield mdl-js-textfield" style="width: 60%; margin-right: 10px;">
-                                <asp:TextBox ID="ALN_matricula" runat="server" CssClass="mdl-textfield__input"></asp:TextBox>
+                            <div class="mdl-textfield mdl-js-textfield" style="width: 50%; margin-right: 10px;">
+                                <asp:TextBox ID="ALN_matricula" runat="server" CssClass="mdl-textfield__input" MaxLength="20"></asp:TextBox>
                                 <asp:Label for="ALN_matricula" runat="server" Text="Matricula" CssClass="mdl-textfield__label"></asp:Label>
                             </div>
 
@@ -56,59 +64,75 @@
                                     <asp:ListItem>7o. B</asp:ListItem>
                                 </asp:DropDownList>
                             </div>
+                            </div>
+                            <!--remover pro pi-->
+                                <div class="mdl-textfield mdl-js-textfield" style="width: 55%;">
+                                    <asp:DropDownList ID="DropDownList1" runat="server" CssClass="mdl-textfield__input mdl-js-ripple-effect">
+                                        <asp:ListItem>escola1</asp:ListItem>
+                                        <asp:ListItem>escola2</asp:ListItem>
+                                        <asp:ListItem>escola3</asp:ListItem>
+                                    </asp:DropDownList>
+                                </div>
+
+                                <div class="mdl-textfield mdl-js-textfield" style="width: 35%; margin-left: 5%; margin-right: 10px;">
+                                    <asp:DropDownList ID="DropDownList2" runat="server" CssClass="mdl-textfield__input mdl-js-ripple-effect">
+                                        <asp:ListItem>professor</asp:ListItem>
+                                        <asp:ListItem>diretor</asp:ListItem>
+                                        <asp:ListItem>aluno</asp:ListItem>
+                                    </asp:DropDownList>
 
                         </div>
-
+                        <!--
                         <div style="width: 100%;">
 
-                            <!--usuario-->
+                            <!--usuario->
                             <div class="mdl-textfield mdl-js-textfield" style="width: 25%; margin-right: 10px;">
                                 <asp:TextBox ID="USR_user" runat="server" CssClass="mdl-textfield__input"></asp:TextBox>
                                 <asp:Label for="USR_user" runat="server" Text="Usuario" CssClass="mdl-textfield__label"></asp:Label>
                                 <span class="mdl-textfield__error">Só letras e números!</span>
                             </div>
 
-                            <!--codigo do cartao-->
+                            <!--codigo do cartao->
                             <asp:Label ID="ALN_card" runat="server" Text="Codigo cartão" Width="40%" Style="margin-right: 10px; color: #888; font-weight: bold; text-align: center;"></asp:Label>
 
-                            <!--botao altera cartao-->
+                            <!--botao altera cartao->
                             <button id="btncartao" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent modal" value="0">Alterar cartão</button>
 
-                        </div>
-
+                        </div>-->
+                        <!--
                         <div style="width: 100%;">
 
-                            <!--senha               ver validacao de senha-->
+                            <!--senha               ver validacao de senha->
                             <div class="mdl-textfield mdl-js-textfield" style="width: 25%; margin-right: 10px;">
                                 <asp:TextBox ID="USR_senha" runat="server" CssClass="mdl-textfield__input" TextMode="Password"></asp:TextBox>
                                 <asp:Label for="USR_senha" runat="server" Text="senha" CssClass="mdl-textfield__label"></asp:Label>
                                 <span class="mdl-textfield__error">ver a validacao de senha</span>
                             </div>
 
-                            <!--status - slider-->
+                            <!--status - slider->
                             <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="ALN_status" style="max-width: 70%; color: #888;">
                                 <input type="checkbox" id="ALN_status" class="mdl-switch__input" checked>
                                 <span class="mdl-switch__label">Ativo</span>
                             </label>
 
-                        </div>
+                        </div>-->
 
                         <!--barra de botoes de acao-->
                         <div style="text-align: center; width: 100%; margin-top: 5%">
-                            <asp:Button ID="btnsalvar" runat="server" Text="Salvar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" />
-                            <asp:Button ID="btnalterar" runat="server" Text="Alterar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
+                            <asp:Button ID="btnsalvar" runat="server" Text="Salvar novo" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" />
+                            <asp:Button ID="btnalterar" runat="server" Text="Atualizar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
                             <asp:Button ID="btnexcluir" runat="server" Text="Excluir" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
-                            <asp:Button ID="btncancelar" runat="server" Text="Cancelar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
-                            <button id="btnconsulta" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent modal" value="2">Pesquisar</button>
+                            <!--<asp:Button ID="btncancelar" runat="server" Text="Cancelar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
+                            <button id="btnconsulta" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">Pesquisar</button>-->
                         </div>
                     </div>
                 </div>
 
-                <div class="mdl-cell mdl-cell--2-col-desktop mdl-cell--2-col-tablet" style="text-align: center; margin-right: 10px; padding-left: 5px;">
-                    <img src="Imagens/profile.jpg" class="mdl-shadow--2dp mdl-card" style="width: 280px; height: 280px; display: block; text-align: center; margin: auto;" />
-                    <br>
-                    <br>
-                    <button id="btnfoto" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent modal" value="1">Foto</button>
+                <div class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet" style="padding-right: 20px; padding-left: 5px; text-align: center;">
+                    <img src="Imagens/profile.jpg" class="mdl-shadow--2dp mdl-card" style="width: 100%; height: auto;" />
+                    <br />
+                    <br />
+                    <button id="btnfoto" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">Foto</button>
                 </div>
             </div>
 
@@ -148,7 +172,7 @@
     </dialog>
 
     <!--modal consulta-->
-    <dialog class="mdl-dialog pesquisa" style="width: 60%;" id="modalpesquisa">
+    <dialog class="mdl-dialog pesquisa" style="width: 60%;" id="pesquisa">
         <div class="mdl-dialog__content">
             <h6 style="color: #0D47A1; text-align: center;">Alunos cadastradas</h6>
             <br />
@@ -167,7 +191,7 @@
             <asp:Button ID="btnordenar" runat="server" Text="Ordenar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
         </div>
         <div class="mdl-dialog__actions mdl-dialog__actions--full-width">
-            <asp:Button ID="btnfecha" runat="server" Text="Voltar" CssClass="mdl-button close" />
+            <asp:Button ID="btnfecha" runat="server" Text="Cadastrar novo" CssClass="mdl-button close" />
         </div>
     </dialog>
 
@@ -178,12 +202,9 @@
             document.querySelector('.arduino').showModal();
         });
 
+
         document.querySelector('#btnfoto').addEventListener('click', function () {
             document.querySelector('.foto').showModal();
-        });
-
-        document.querySelector('#btnconsulta').addEventListener('click', function () {
-            document.querySelector('.pesquisa').showModal();
         });
 
         dialog.querySelector('.close').addEventListener('click', function () {

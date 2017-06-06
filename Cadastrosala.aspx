@@ -11,7 +11,7 @@
 
                 <div style="width: 100%;">
                     <!--ano - dropdown-->
-                    <div class="mdl-textfield mdl-js-textfield" style="width: 10%; margin-left: 4%">
+                    <!--<div class="mdl-textfield mdl-js-textfield" style="width: 10%; margin-left: 4%">
                         <asp:DropDownList ID="ANO_ID" runat="server" CssClass="mdl-textfield__input mdl-js-ripple-effect" ToolTip="Estado">
                             <asp:ListItem>5</asp:ListItem>
                             <asp:ListItem>6</asp:ListItem>
@@ -19,7 +19,7 @@
                             <asp:ListItem>8</asp:ListItem>
                             <asp:ListItem>9</asp:ListItem>
                         </asp:DropDownList>
-                    </div>
+                    </div>-->
 
                     <!--sala-->
                     <div class="mdl-textfield mdl-js-textfield" style="width: 80%; margin-left: 10px;">
@@ -28,7 +28,7 @@
                     </div>
 
                     <!--materia - cheklist-->
-                    <div class="mdl-textfield mdl-js-textfield" style="width: 98%; margin-left: 2%; margin-left: 15%; margin-right: 15%">
+                    <!--<div class="mdl-textfield mdl-js-textfield" style="width: 98%; margin-left: 2%; margin-left: 15%; margin-right: 15%">
                         <asp:CheckBoxList ID="MAT_ID" runat="server" CssClass="mdl-js-ripple-effect" CellPadding="-1" CellSpacing="40" Height="100%" RepeatColumns="6">
                             <asp:ListItem>Artes</asp:ListItem>
                             <asp:ListItem>Biologia</asp:ListItem>
@@ -48,31 +48,24 @@
                             <asp:ListItem>Sociologia</asp:ListItem>
                             <asp:ListItem>Outras</asp:ListItem>
                         </asp:CheckBoxList>
-
-
-                    </div>
+                    </div>-->
 
                 </div>
 
-
-
-
-
                 <!--barra de botoes de acao-->
                 <div style="text-align: center; width: 100%; margin-top: 5%">
-                    <asp:Button ID="btnsalvar" runat="server" Text="Salvar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" />
-                    <asp:Button ID="btnalterar" runat="server" Text="Alterar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
+                    <asp:Button ID="btnsalvar" runat="server" Text="Salvar novo" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" />
+                    <asp:Button ID="btnatualizar" runat="server" Text="Atualizar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
                     <asp:Button ID="btnexcluir" runat="server" Text="Excluir" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
-                    <asp:Button ID="btncancelar" runat="server" Text="Cancelar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
-                    <button id="btnconsulta" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent modal">Pesquisar</button>
+                    <!--<asp:Button ID="btncancelar" runat="server" Text="Cancelar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />-->
+                    <!--<button id="btnconsulta" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent modal">Pesquisar</button>-->
                 </div>
             </div>
         </div>
     </div>
-
+    <!--
     <script>
-        //document.onload = function () { document.querySelector('.pesquisa').showModal() };
-
+        
         document.querySelector('#btnconsulta').addEventListener('click', function () {
             document.querySelector('.pesquisa').showModal();
         });
@@ -83,7 +76,7 @@
 
     </script>
 
-    <!--modal consulta-->
+    <!--modal consulta->
     <dialog class="mdl-dialog pesquisa" style="width: 60%;" id="pesquisa">
         <div class="mdl-dialog__content">
             <h6 style="color: #0D47A1; text-align: center;">Salas cadastradas</h6>
@@ -100,12 +93,14 @@
                     <br />
                 </div>
             </div>
-            <asp:Button ID="btnordenar" runat="server" Text="Ordenar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
+            <button id="btnordenar" type="button" runat="server" class="mdl-button mdl-js-button mdl-button--raised mdl-button--primary">Ordenar</button>
+            <!--<asp:Button ID="btnordenar" Text="Ordenar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />->
         </div>
         <div class="mdl-dialog__actions mdl-dialog__actions--full-width">
-            <asp:Button ID="btnfecha" runat="server" Text="Voltar" CssClass="mdl-button close" />
+            <asp:Button ID="btnaltera" runat="server" Text="Alterar" CssClass="mdl-button close" />
+            <asp:Button ID="btnfecha" runat="server" Text="Cadastrar novo" CssClass="mdl-button close" />
         </div>
     </dialog>
-
+    -->
 </asp:Content>
 
