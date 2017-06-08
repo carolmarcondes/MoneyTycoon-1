@@ -22,7 +22,7 @@
                     </div>-->
 
                     <!--sala-->
-                    <div class="mdl-textfield mdl-js-textfield" style="width: 90%; margin-left: 10px;">
+                    <div class="mdl-textfield mdl-js-textfield" style="width: 80%; margin-left: 10px;">
                         <asp:TextBox ID="SAL_nome" runat="server" CssClass="mdl-textfield__input" ToolTip="Cadastro das tarefas"></asp:TextBox>
                         <asp:Label for="SAL_nome" runat="server" Text="Nome da sala" CssClass="mdl-textfield__label"></asp:Label>
                     </div>
@@ -51,14 +51,19 @@
                     </div>-->
 
                 </div>
-
+                <div>
+                    <asp:DropDownList ID="ddl" runat="server"></asp:DropDownList>
+                </div>
                 <!--barra de botoes de acao-->
                 <div style="text-align: center; width: 100%; margin-top: 5%">
-                    <asp:Button ID="btnsalvar" runat="server" Text="Salvar novo" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" />
+                    <asp:Button ID="btnsalvar" runat="server" Text="Salvar novo" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" OnClick="btnsalvar_Click"/>
                     <asp:Button ID="btnatualizar" runat="server" Text="Atualizar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
                     <asp:Button ID="btnexcluir" runat="server" Text="Excluir" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
                     <!--<asp:Button ID="btncancelar" runat="server" Text="Cancelar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />-->
                     <!--<button id="btnconsulta" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent modal">Pesquisar</button>-->
+                </div>
+                <div>
+                    <asp:Label ID="confirmacao" runat="server" Text="Label"></asp:Label>
                 </div>
             </div>
         </div>

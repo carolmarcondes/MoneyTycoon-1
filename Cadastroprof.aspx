@@ -92,18 +92,14 @@
                             <div style="width: 100%;">
                                 <!--remover pro pi-->
                                 <div class="mdl-textfield mdl-js-textfield" style="width: 55%;">
-                                    <asp:DropDownList ID="ESC_" runat="server" CssClass="mdl-textfield__input mdl-js-ripple-effect">
-                                        <asp:ListItem>escola1</asp:ListItem>
-                                        <asp:ListItem>escola2</asp:ListItem>
-                                        <asp:ListItem>escola3</asp:ListItem>
+                                    <asp:DropDownList ID="ddl2" runat="server" CssClass="mdl-textfield__input mdl-js-ripple-effect">
+                                        
                                     </asp:DropDownList>
                                 </div>
 
                                 <div class="mdl-textfield mdl-js-textfield" style="width: 35%; margin-left: 5%; margin-right: 10px;">
-                                    <asp:DropDownList ID="PER_" runat="server" CssClass="mdl-textfield__input mdl-js-ripple-effect">
-                                        <asp:ListItem>professor</asp:ListItem>
-                                        <asp:ListItem>diretor</asp:ListItem>
-                                        <asp:ListItem>aluno</asp:ListItem>
+                                    <asp:DropDownList ID="ddl" runat="server" CssClass="mdl-textfield__input mdl-js-ripple-effect">
+                                        
                                     </asp:DropDownList>
                                 </div>
 
@@ -126,12 +122,13 @@
 
                             <!--barra de botoes de acao-->
                             <div style="text-align: center; width: 100%; margin-top: 5%">
-                                <asp:Button ID="btnsalvar" runat="server" Text="Salvar novo" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" />
+                                <asp:Button ID="btnsalvar" runat="server" Text="Salvar novo" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" OnClick="btnsalvar_Click" />
                                 <asp:Button ID="btnalterar" runat="server" Text="Atualizar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
                                 <asp:Button ID="btnexcluir" runat="server" Text="Excluir" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
                                 <!--<asp:Button ID="btncancelar" runat="server" Text="Cancelar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />-->
                                 <!--<button id="btnconsulta" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent modal">Pesquisar</button>-->
                             </div>
+                            <asp:Label ID="confirmacao" runat="server" Text="Label"></asp:Label>
                         </div>
                     </div>
                 </div>

@@ -21,8 +21,8 @@
 
                             <!--data nascimento--><!--voltar para date para o pi-->
                             <div class="mdl-textfield mdl-js-textfield" style="width: 25%">
-                                <asp:TextBox ID="ALN_nasc" runat="server" CssClass="mdl-textfield__input" ToolTip="Idade do aluno" TextMode="Number" MaxLength="2"></asp:TextBox>
-                                <asp:Label for="ALN_nasc" runat="server" Text="Idade" CssClass="mdl-textfield__label"></asp:Label>
+                                <asp:TextBox ID="ALN_idade" runat="server" CssClass="mdl-textfield__input" ToolTip="Idade do aluno" TextMode="Number" MaxLength="2"></asp:TextBox>
+                                <asp:Label for="ALN_idade" runat="server" Text="Idade" CssClass="mdl-textfield__label"></asp:Label>
                                 <span class="mdl-textfield__error">Só numero</span>
                             </div>
 
@@ -42,8 +42,8 @@
                                 <!--sexo em dropdown-->
                                 <div class="mdl-textfield mdl-js-textfield" style="width: 30%;">
                                     <asp:DropDownList ID="ALN_sexo" runat="server" CssClass="mdl-textfield__input mdl-js-ripple-effect">
-                                        <asp:ListItem>Masculino</asp:ListItem>
-                                        <asp:ListItem>Feminino</asp:ListItem>
+                                        <asp:ListItem Value="M">Masculino</asp:ListItem>
+                                        <asp:ListItem Value="F">Feminino</asp:ListItem>
                                     </asp:DropDownList>
                                 </div>
 
@@ -59,13 +59,12 @@
 
                             <!--sala - dropdown-->
                             <div class="mdl-textfield mdl-js-textfield" style="width: 10%; margin-right: 10px;">
-                                <asp:DropDownList ID="SAL_ID" runat="server" CssClass="mdl-textfield__input mdl-js-ripple-effect" ToolTip="Estado">
-                                    <asp:ListItem>7o. A</asp:ListItem>
-                                    <asp:ListItem>7o. B</asp:ListItem>
+                                <asp:DropDownList ID="ddl" runat="server" CssClass="mdl-textfield__input mdl-js-ripple-effect" ToolTip="Estado">
+                                   
                                 </asp:DropDownList>
                             </div>
                             </div>
-                            <!--remover pro pi-->
+                            <!--remover pro pi
                                 <div class="mdl-textfield mdl-js-textfield" style="width: 55%;">
                                     <asp:DropDownList ID="DropDownList1" runat="server" CssClass="mdl-textfield__input mdl-js-ripple-effect">
                                         <asp:ListItem>escola1</asp:ListItem>
@@ -81,7 +80,7 @@
                                         <asp:ListItem>aluno</asp:ListItem>
                                     </asp:DropDownList>
 
-                        </div>
+                        </div>-->
                         <!--
                         <div style="width: 100%;">
 
@@ -99,31 +98,36 @@
                             <button id="btncartao" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent modal" value="0">Alterar cartão</button>
 
                         </div>-->
-                        <!--
+                        
                         <div style="width: 100%;">
 
-                            <!--senha               ver validacao de senha->
+                            <!--senha               ver validacao de senha-->
                             <div class="mdl-textfield mdl-js-textfield" style="width: 25%; margin-right: 10px;">
                                 <asp:TextBox ID="USR_senha" runat="server" CssClass="mdl-textfield__input" TextMode="Password"></asp:TextBox>
                                 <asp:Label for="USR_senha" runat="server" Text="senha" CssClass="mdl-textfield__label"></asp:Label>
                                 <span class="mdl-textfield__error">ver a validacao de senha</span>
                             </div>
 
-                            <!--status - slider->
+                            <!--status - slider-->
                             <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="ALN_status" style="max-width: 70%; color: #888;">
                                 <input type="checkbox" id="ALN_status" class="mdl-switch__input" checked>
                                 <span class="mdl-switch__label">Ativo</span>
                             </label>
 
-                        </div>-->
+                        </div>
 
                         <!--barra de botoes de acao-->
                         <div style="text-align: center; width: 100%; margin-top: 5%">
-                            <asp:Button ID="btnsalvar" runat="server" Text="Salvar novo" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" />
+                            <asp:Button ID="btnsalvar" runat="server" Text="Salvar novo" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" OnClick="btnsalvar_Click"/>
                             <asp:Button ID="btnalterar" runat="server" Text="Atualizar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
                             <asp:Button ID="btnexcluir" runat="server" Text="Excluir" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
                             <!--<asp:Button ID="btncancelar" runat="server" Text="Cancelar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
                             <button id="btnconsulta" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">Pesquisar</button>-->
+                        </div>
+                        <div>
+
+                            <asp:Label ID="confirmacao" runat="server" Text="Label"></asp:Label>
+
                         </div>
                     </div>
                 </div>

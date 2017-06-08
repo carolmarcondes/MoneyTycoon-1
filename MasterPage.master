@@ -56,18 +56,16 @@
                 <span style="color: white;">Ola, Usuário</span>
             </header>
             <nav class="demo-navigation mdl-navigation mdl-color--blue-800 mdl-color-text--blue-50">
-                <!--<a class="mdl-navigation__link" style="color: #E3F2FD" href=""><i class="material-icons" role="presentation">home</i>  Home</a>-->
+                <a class="mdl-navigation__link" style="color: #E3F2FD" href=""><i class="material-icons" role="presentation">home</i>  Home</a>
                 <a class="mdl-navigation__link" style="color: #E3F2FD" href="Cadastroprof.aspx"><i class="material-icons" role="presentation">supervisor_account</i>  Professores</a>
                 <a class="mdl-navigation__link" style="color: #E3F2FD" href="Cadastrosala.aspx"><i class="material-icons" role="presentation">group</i>  Salas</a>
                 <a class="mdl-navigation__link" style="color: #E3F2FD" href="Cadastroalun.aspx"><i class="material-icons" role="presentation">face</i>  Alunos</a>
                 <a class="mdl-navigation__link" style="color: #E3F2FD" href="Cadastromaster.aspx"><i class="material-icons" role="presentation">account_box</i>  Responsavel</a>
                 <a class="mdl-navigation__link" style="color: #E3F2FD" href="Cadastroescola.aspx"><i class="material-icons" role="presentation">location_city</i>  Escola</a>
-                <a class="mdl-navigation__link" style="color: #E3F2FD" href="Cadastroescola.aspx"><i class="material-icons" role="presentation">search</i>  Resultados</a>
-
-                <!--<a class="mdl-navigation__link" style="color: #E3F2FD" href="#"><i class="material-icons" role="presentation">attach_money</i>  Financeiro</a>
+                <a class="mdl-navigation__link" style="color: #E3F2FD" href="#"><i class="material-icons" role="presentation">attach_money</i>  Financeiro</a>
                 <a class="mdl-navigation__link" style="color: #E3F2FD" href="Ranking.aspx"><i class="material-icons" role="presentation">star</i>  Ranking</a>
                 <a class="mdl-navigation__link" style="color: #E3F2FD" href="Perfilmaster.aspx"><i class="material-icons" role="presentation">account_box</i>  Meu perfil</a>
-                <a class="mdl-navigation__link" style="color: #E3F2FD" href="Perfilescola.aspx"><i class="material-icons" role="presentation">location_city</i>  Dados da escola</a>-->
+                <a class="mdl-navigation__link" style="color: #E3F2FD" href="Perfilescola.aspx"><i class="material-icons" role="presentation">location_city</i>  Dados da escola</a>
                 <a class="mdl-navigation__link" style="color: #E3F2FD" href="Feedback.aspx"><i class="material-icons" role="presentation">forum</i>  Contato</a>
                 <div class="mdl-layout-spacer"></div>
                 <a class="mdl-navigation__link" style="color: #E3F2FD" href="Documentação.aspx"><i class="material-icons" role="presentation">help_outline</i>  Ajuda</a>

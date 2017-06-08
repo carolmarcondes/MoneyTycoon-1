@@ -20,14 +20,14 @@
                     <h5 style="text-align: center; color: #888;">Cadastros encontrados para escola</h5>
                     <br />
                     <br />
-                    <asp:Button ID="btnordenarescola" runat="server" Text="Ordenar" CssClass="mdl-button mdl-js-button mdl-button--raised" />
+                    <asp:Button ID="btnordenarescola" runat="server" Text="Ordenar" CssClass="mdl-button mdl-js-button mdl-button--raised" OnClick="btnordenarescola_Click"/>
 
                     <div class="mdl-grid">
                         <div class="mdl-cell mdl-cell--6-col">
-                            <asp:Label ID="lbldesordenadoescola" runat="server" Text="desordenado"></asp:Label>
+                            <asp:Label ID="lbl" runat="server" Text="desordenado"></asp:Label>
                         </div>
                         <div class="mdl-cell mdl-cell--6-col">
-                            <asp:Label ID="lblordenadoescola" runat="server" Text="ordenado"></asp:Label>
+                            <asp:Label ID="ordenacao" runat="server" Text="ordenado"></asp:Label>
                         </div>
                     </div>
                     <br />
@@ -35,12 +35,11 @@
                     <div class="mdl-grid">
                         <div class="mdl-cell mdl-cell--12-col" style="text-align: center;">
                             <div class="mdl-textfield mdl-js-textfield" style="width: 100%;">
-                                <asp:DropDownList ID="pesquisaescola" runat="server" CssClass="mdl-textfield__input mdl-js-ripple-effect">
-                                    <asp:ListItem>escola1</asp:ListItem>
-                                    <asp:ListItem>escola2</asp:ListItem>
+                                <asp:DropDownList ID="ddl" runat="server" CssClass="mdl-textfield__input mdl-js-ripple-effect">
+                                    
                                 </asp:DropDownList>
                             </div>
-                            <asp:Button ID="btnalteraescola" runat="server" Text="Alterar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" />
+                            <asp:Button ID="btnalteraescola" runat="server" Text="Alterar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" OnClick="btnalteraescola_Click" />
                         </div>
                     </div>
                 </div>
