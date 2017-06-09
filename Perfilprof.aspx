@@ -6,17 +6,16 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
     
-    <div class="mdl-grid" style="padding-top: 75px;">
-        <div class="mdl-cell mdl-cell--1-col-desktop mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-        <div class="mdl-cell mdl-cell--10-col-desktop mdl-cell--8-col-tablet fwhite">
-            <h5 style="text-align: center; color: #888;">Meu perfil</h5>
+    <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--12-col mdl-color--white mdl-shadow--2dp">
+            <h5 class="mdl-color-text--indigo mdl-typography--text-center">Meu perfil</h5>
             <div class="mdl-grid">
 
-                <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--3-col-tablet" style="text-align: center; margin-right: 0px; padding-right: 0px;">
-                    <img src="Imagens/profile.jpg" class="mdl-shadow--2dp mdl-card" style="width: 300px; height: 300px; display: block; text-align: center; margin: auto;" />
+                <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--2-col-tablet" style="padding-right: 20px; padding-left: 5px; text-align: center;">
+                    <img src="Imagens/profile.jpg" class="mdl-shadow--2dp mdl-card" style="width: 100%; height: auto;" />
                     <br>
-                    <button id="btnfoto" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent modal">Foto</button>
-                    
+                    <br>
+                    <button id="btnfoto" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">Foto</button>
                 </div>
 
                 <div class="mdl-cell mdl-cell--8-col-desktop mdl-cell--5-col-tablet" style="padding: 0px;">
@@ -64,8 +63,6 @@
             </div>
 
         </div>
-
-        <div class="mdl-cell mdl-cell--1-col-desktop mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
     </div>
 
 

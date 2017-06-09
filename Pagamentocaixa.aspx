@@ -5,12 +5,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-    
-    <div class="mdl-grid" style="padding-top: 75px;">
-        <div class="mdl-cell mdl-cell--1-col-desktop mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-        <div class="mdl-cell mdl-cell--10-col-desktop mdl-cell--8-col-tablet fwhite">
-            <h5 style="text-align: center; color: #888;">Cadastro das formas de pagamento no caixa</h5>
-            <div class="mdl-grid">
+
+        <div class="mdl-cell mdl-cell--12-col mdl-color--white mdl-shadow--2dp" style="padding: 4%;">
+            <h5 class="mdl-color-text--indigo mdl-typography--text-center">Cadastro das formas de pagamento no caixa</h5>
 
                 <div style="width: 100%; text-align: center;">
                     <!--cadastro-->
@@ -45,12 +42,6 @@
                     <asp:Button ID="btncancelar" runat="server" Text="Cancelar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
                 </div>
             </div>
-
-        </div>
-
-        <div class="mdl-cell mdl-cell--1-col-desktop mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-    </div>
-
 
 </asp:Content>
 

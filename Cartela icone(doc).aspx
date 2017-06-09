@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Cartela icone.aspx.cs" Inherits="Cartela_icone" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Cartela icone(doc).aspx.cs" Inherits="Cartela_icone" %>
 
 <!DOCTYPE html>
 

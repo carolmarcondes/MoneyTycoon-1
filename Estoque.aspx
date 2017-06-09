@@ -5,11 +5,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
 
-    <div class="mdl-grid" style="padding-top: 75px;">
-        <div class="mdl-cell mdl-cell--1-col-desktop mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-        <div class="mdl-cell mdl-cell--10-col-desktop mdl-cell--8-col-tablet fwhite">
-            <h5 style="text-align: center; color: #888;">Ajuste de estoque</h5>
-            <div class="mdl-grid">
+   <div class="mdl-cell mdl-cell--12-col mdl-color--white mdl-shadow--2dp">
+        <h5 class="mdl-color-text--indigo mdl-typography--text-center">Ajuste de estoque</h5>
+            <div class="mdl-grid" style="width: 80%;">
 
                 <div style="width: 100%; text-align: center;">
                     <!--escola - dropdown-->
@@ -55,16 +53,13 @@
                 </div>
 
                 <!--barra de botoes de acao-->
-                <div style="text-align: center; width: 100%; margin-top: 5%">
+                <div style="text-align: center; width: 100%; margin-top: 5%; margin-bottom:3%;">
                     <asp:Button ID="btnsalvar" runat="server" Text="Salvar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" />
                     <asp:Button ID="btncancelar" runat="server" Text="Cancelar" CssClass="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" />
                 </div>
             </div>
 
         </div>
-
-        <div class="mdl-cell mdl-cell--1-col-desktop mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-    </div>
 
 </asp:Content>
 

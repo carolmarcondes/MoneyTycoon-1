@@ -1,14 +1,12 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Estorno.aspx.cs" Inherits="Estorno" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Estorno(desativado).aspx.cs" Inherits="Estorno" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <title>Estorno de creditos</title>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
 
-    <div class="mdl-grid" style="padding-top: 75px;">
-        <div class="mdl-cell mdl-cell--1-col-desktop mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-        <div class="mdl-cell mdl-cell--10-col-desktop mdl-cell--8-col-tablet fwhite">
-            <h5 style="text-align: center; color: #888;">Estorno creditos</h5>
+    <div class="mdl-cell mdl-cell--12-col mdl-color--white mdl-shadow--2dp">
+        <h5 class="mdl-color-text--indigo mdl-typography--text-center">Estorno dos creditos</h5>
             <div class="mdl-grid">
 
                 <div style="width: 100%; text-align: center;">

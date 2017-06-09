@@ -13,7 +13,7 @@
 
                 <div style="width: 100%; text-align: center;">
                     <div style="font-size: smaller;">
-                        <a href="Estorno.aspx" class="mdl-button mdl-js-button mdl-button--raised">Estorno</a>
+                        <button id="btnestorno" type="button" class="mdl-button mdl-js-button mdl-button--raised">Estorno</button>
                     </div>
                     <!--Tarefas-->
                     <div class="mdl-textfield mdl-js-textfield" style="width: 30%;">
@@ -244,8 +244,53 @@
                 </div>
             </div>
         </div>
-        <div class="mdl-cell mdl-cell--1-col-desktop mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+      
     </div>
 
+    <!--modal estorno-->
+    <dialog class="mdl-dialog" id="modalestorno" style="width: 50%;">
+        <div class="mdl-dialog__content">
+            <!--Sala-->
+                    <div class="mdl-textfield mdl-js-textfield" style="width: 10%; margin-left: 5%;">
+                        <asp:DropDownList ID="DropDownList1" runat="server" CssClass="mdl-textfield__input mdl-js-ripple-effect" ToolTip="Sala">
+                            <asp:ListItem>7ºA</asp:ListItem>
+                            <asp:ListItem>7ºB</asp:ListItem>
+                            <asp:ListItem>7ºC</asp:ListItem>
+                        </asp:DropDownList>
+                    </div>
+
+                    <!--Aluno-->
+                    <div class="mdl-textfield mdl-js-textfield" style="width: 50%;">
+                        <asp:DropDownList ID="ALN_nome" runat="server" CssClass="mdl-textfield__input mdl-js-ripple-effect" ToolTip="Nome do aluno">
+                            <asp:ListItem>Wandercleydison</asp:ListItem>
+                            <asp:ListItem>Derpina</asp:ListItem>
+                            <asp:ListItem>Deperson</asp:ListItem>
+                            <asp:ListItem>Juvenalda</asp:ListItem>
+                        </asp:DropDownList>
+                    </div>
+
+                            <!--valor-->
+                            <div class="mdl-textfield mdl-js-textfield" style="width: 30%; margin-right: 10px;">
+                                <asp:TextBox ID="TextBox18" runat="server" CssClass="mdl-textfield__input" TextMode="Number" ToolTip="Valor entre 0 e 100"></asp:TextBox>
+                                <asp:Label for="MBC_entrada" runat="server" Text="Valor a ser extornado" CssClass="mdl-textfield__label"></asp:Label>
+                            </div>
+                        </div>
+        <div class="mdl-dialog__actions mdl-dialog__actions--full-width">
+            <asp:Button ID="btnestornosalva" runat="server" Text="Estornar" CssClass="mdl-button close mdl-color-text--deep-orange" />
+            <asp:Button ID="btncancela" runat="server" Text="Cancelar" CssClass="mdl-button close mdl-color-text--blue" />
+        </div>
+    </dialog>
+
+    <script>
+
+        var modalButton1 = document.querySelector('#btnestorno').addEventListener('click', function () {
+            document.querySelector('#modalestorno').showModal();
+        });
+
+        dialog.querySelector('.close').addEventListener('click', function () {
+            dialog.close();
+        });
+
+    </script>
 </asp:Content>
 
